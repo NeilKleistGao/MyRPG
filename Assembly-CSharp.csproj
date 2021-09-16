@@ -36,8 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AssetsPack\Scripts\Managers\MouseManager.cs" />
-     <Compile Include="Assets\AssetsPack\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Managers\MouseManager.cs" />
+     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\EnemyController.cs" />
      <None Include="Assets\AssetsPack\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
      <None Include="Assets\AssetsPack\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
     <Reference Include="UnityEngine">
@@ -648,9 +649,6 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>C:/Users/Neil Kleist Gao/Documents/Code/Unity3D/MyRPG/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Neil Kleist Gao/Documents/Code/Unity3D/MyRPG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
         <HintPath>C:/Users/Neil Kleist Gao/Documents/Code/Unity3D/MyRPG/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
