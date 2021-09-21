@@ -4,11 +4,10 @@ using UnityEngine;
 using System;
 
 public class MouseManager : MonoBehaviour {
-
     public static MouseManager instance;
-
     private RaycastHit hitInfo;
     public event Action<Vector3> onMouseClicked;
+    public event Action<GameObject> onEnemyClicked;
 
     public Texture2D point, doorway, attack, target, arrow;
 
@@ -44,6 +43,9 @@ public class MouseManager : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && hitInfo.collider != null) {
             if (hitInfo.collider.gameObject.CompareTag("Ground")) {
                 onMouseClicked?.Invoke(hitInfo.point);
+            }
+            if (hitInfo.collider.gameObject.CompareTag("Enemy")) {
+                onEnemyClicked?.Invoke(hitInfo.collider.gameObject);
             }
         }
     }
